@@ -118,8 +118,89 @@ a:after {
     max-width: 100%;
 }
 
+.features-2 {
+    margin-top: 160px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.features-2__feature-image-container {
+    height: auto;
+    width: auto;
+}
+
+.features-2 .features-2__feature-image {
+    width: 100%;
+}
+
+.features-2__feature {
+    flex: 1 1 auto;
+}
+
+.features-2__feature:nth-child(2n) {
+    max-width: 450px;
+}
+
+.features-2__feature:nth-child(2n) .features-2__feature-description {
+    max-width: 450px;
+}
+
+.features-2__feature:not(:nth-child(2n)) {
+    max-width: 660px;
+}
+
+.features-2__feature:not(:nth-child(2n)) .features-2__feature-description {
+    max-width: 540px;
+}
+
+.features-2__feature:nth-child(2) {
+    margin-top: 365px;
+}
+
+.features-2__feature:nth-child(3) {
+    margin-top: -150px;
+}
+
+.features-2__feature:nth-child(4) {
+    margin-top: 340px;
+}
+
+.features-2__feature:nth-child(5) {
+    margin-top: -150px;
+}
+
+.column-1 {
+    columns: auto 1;
+}
+
+.column-2 {
+    columns: auto 2;
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+    padding-right: 200px;
+}
+
+.list li {
+    position: relative;
+    margin-left: 17px;
+}
+
+.list li:before {
+    content: "";
+    position: absolute;
+    background-color: #d3d3d3;
+    top: 15px;
+    left: -17px;
+    width: 13px;
+    height: 2px;
+}
+
 @media all and (max-width: 1400px) {
-    .header {
+    .small-screen-hide {
         display: none;
     }
     .container {
@@ -174,6 +255,15 @@ a:after {
     .shift-right-margin {
         margin-right: 0;
     }
+    .features-2__feature:not(:nth-child(1)) {
+        margin-top: 85px;
+    }
+    .features-2 .features-2__feature {
+        max-width: 100%;
+    }
+    .list {
+        padding: 0;
+    }
 }
 
 @media all and (max-width: 760px) {
@@ -210,7 +300,8 @@ a:after {
         max-width: 315px;
         max-height: 215px;
     }
-    .feature .feature__text {
+    .feature .feature__text,
+    .features-2__feature-description {
         padding-left: 20px;
         padding-right: 20px;
     }

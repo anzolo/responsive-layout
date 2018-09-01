@@ -15,7 +15,7 @@
     <section class="features-with-links container">
         <div class="feature feature-sport">
             <article class="feature__text">
-                <h1 class="header feature__text-header">Спорт</h1>
+                <h1 class="header feature__text-header small-screen-hide">Спорт</h1>
                 <p class="paragraph feature__text-paragraph">
                     В атмосферу современного функционального дизайна посетители Neo Geo погружаются при входе в бизнес-центр. Архитекторы предусмотрели
                     несколько входных групп со стильным дизайнерским лобби. Одна из них расположена со стороны станции метро
@@ -40,7 +40,7 @@
                 <img class="feature__image" src="/res/photo-2.png" alt="">
             </div>
             <article class="feature__text">
-                <h1 class="header feature__text-header">Заголовок <br> в 2 строчки</h1>
+                <h1 class="header feature__text-header small-screen-hide">Заголовок <br> в 2 строчки</h1>
                 <p class="paragraph feature__text-paragraph">
                     В бизнес-центре Neo Geo расположилось 8 атриумов общей площадью 4500 кв.м. Каждый из них - это внутренний парк площадью от
                     200 до 700 кв.м, с местами как для отдыха и уединения, так и для деловых мероприятий. Общий элемент дизайна
@@ -57,7 +57,7 @@
 
         <div class="feature feature-sport-2">
             <article class="feature__text">
-                <h1 class="header feature__text-header">Спорт</h1>
+                <h1 class="header feature__text-header small-screen-hide">Спорт</h1>
                 <p class="paragraph feature__text-paragraph">
                     Один атриум станет источником энергии и креативных решений благодаря ярким манекенам, олицетворяющим людей в постоянном движении.
                     В другом можно расслабиться среди зелени в комфортных подвесных креслах. Некоторые атриумы скомбинированы
@@ -84,16 +84,12 @@
         <img class="wide-photo__image" src="/res/photo-4.png" alt="">
     </section>
 
-    <!--
-
-
-
-
-
-    <section class="features-block">
-        <div class="features-block__feature">
-            <img class="features-block__feature-image" src="/res/photo-5.png" alt="">
-            <article class="features-block__feature-description">
+    <section class="features-2 container">
+        <div class="features-2__feature food">
+            <div class="features-2__feature-image-container">
+                <img class="features-2__feature-image" src="/res/photo-5.png" alt="">
+            </div>
+            <article class="features-2__feature-description">
                 <h1 class="header">
                     Питание и магазины
                 </h1>
@@ -103,14 +99,23 @@
                     провести деловую или дружескую встречу - в кафе и ресторанах.
                 </p>
                 <p class="paragraph">
-                    — Рестораны — Супермаркет — Кофейня — Здоровое питание — Бургерная — Столовая
+                    <ul class="column-2 list">
+                        <li>Рестораны</li>
+                        <li>Супермаркет</li>
+                        <li>Кофейня</li>
+                        <li>Здоровое питание</li>
+                        <li>Бургерная</li>
+                        <li>Столовая</li>
+                    </ul>
                 </p>
             </article>
         </div>
 
-        <div class="features-block__feature">
-            <img class="features-block__feature-image" src="/res/photo-6.png" alt="">
-            <article class="features-block__feature-description">
+        <div class="features-2__feature">
+            <div class="features-2__feature-image-container">
+                <img class="features-2__feature-image" src="/res/photo-6.png" alt="">
+            </div>
+            <article class="features-2__feature-description">
                 <h1 class="header">
                     Спорт
                 </h1>
@@ -119,14 +124,19 @@
                     пространства для занятий спортом перед началом рабочего дня, после его окончания или в обеденный перерыв.
                 </p>
                 <p class="paragraph">
-                    — Фитнес - Теннис
+                    <ul class="column-1 list">
+                        <li>Фитнес</li>
+                        <li>Теннис</li>
+                    </ul>
                 </p>
             </article>
         </div>
 
-        <div class="features-block__feature">
-            <img class="features-block__feature-image" src="/res/photo-7.png" alt="">
-            <article class="features-block__feature-description">
+        <div class="features-2__feature">
+            <div class="features-2__feature-image-container">
+                <img class="features-2__feature-image" src="/res/photo-7.png" alt="">
+            </div>
+            <article class="features-2__feature-description">
                 <h1 class="header">
                     Обслуживание
                 </h1>
@@ -136,14 +146,23 @@
                     банкоматов. Документами займется нотариус, организацией отдыха - турагентство.
                 </p>
                 <p class="paragraph">
-                    - Финансы - Нотариус — Турагентство — Салон красоты — Химчистка — Аптека
+                    <ul class="column-2 list">
+                        <li>Финансы</li>
+                        <li>Нотариус</li>
+                        <li>Турагентство</li>
+                        <li>Салон красоты</li>
+                        <li>Химчистка</li>
+                        <li>Аптека</li>
+                    </ul>
                 </p>
             </article>
         </div>
 
-        <div class="features-block__feature">
-            <img class="features-block__feature-image" src="/res/photo-8.png" alt="">
-            <article class="features-block__feature-description">
+        <div class="features-2__feature">
+            <div class="features-2__feature-image-container shift-right-margin">
+                <img class="features-2__feature-image" src="/res/photo-8.png" alt="">
+            </div>
+            <article class="features-2__feature-description">
                 <h1 class="header">
                     Деловые встречи
                 </h1>
@@ -153,14 +172,19 @@
                     дизайн которых располагает к динамичному решению деловых вопросов.
                 </p>
                 <p class="paragraph">
-                    - Три конференц зала - Переговорные
+                    <ul class="column-1 list">
+                        <li>Три конференц зала</li>
+                        <li>Переговорные</li>
+                    </ul>
                 </p>
             </article>
         </div>
 
-        <div class="features-block__feature">
-            <img class="features-block__feature-image" src="/res/photo-9.png" alt="">
-            <article class="features-block__feature-description">
+        <div class="features-2__feature">
+            <div class="features-2__feature-image-container shift-left-margin">
+                <img class="features-2__feature-image" src="/res/photo-9.png" alt="">
+            </div>
+            <article class="features-2__feature-description">
                 <h1 class="header">
                     Парковка
                 </h1>
@@ -170,13 +194,15 @@
                     климата. Продуманная организация въезда и выезда позволяет избежать затруднений движения в часы пик.
                 </p>
                 <p class="paragraph">
-                    — Крытый паркинг (430 мест) — Гостевой парктинг (380 мест)
+                    <ul class="column-1 list">
+                        <li>Крытый паркинг (430 мест)</li>
+                        <li>Гостевой парктинг (380 мест)</li>
+                    </ul>
                 </p>
             </article>
         </div>
 
-    </section> -->
-
+    </section>
 </body>
 
 </html>
