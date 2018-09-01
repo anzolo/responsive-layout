@@ -7,13 +7,14 @@
     <title>Responsive test</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/normalize.css" rel="stylesheet">
     <link rel="stylesheet" href="/style.css">
 </head>
 
 <body>
-    <section class="feature">
+    <section class="feature feature-sport">
         <article class="feature__text">
-            <h1 class="feature__text-header">Спорт</h1>
+            <h1 class="header feature__text-header">Спорт</h1>
             <p class="paragraph feature__text-paragraph">
                 В атмосферу современного функционального дизайна посетители Neo Geo погружаются при входе в бизнес-центр. Архитекторы предусмотрели
                 несколько входных групп со стильным дизайнерским лобби. Одна из них расположена со стороны станции метро
@@ -24,16 +25,19 @@
                 такого масштабного проекта.
             </p>
             <a class="feature__text-link" href="#">
-                Записаться на просмотр —>
+                Записаться на просмотр
             </a>
 
         </article>
-        <img class="feature__image" src="/res/photo-1.png" alt="">
+        <div class="feature__image-container">
+            <img class="feature__image" src="/res/photo-1.png" alt="">
+        </div>
+
     </section>
 
     <section class="feature">
         <article class="feature__text">
-            <h1 class="feature__text-header">Заголовок <br> в 2 строчки</h1>
+            <h1 class="header feature__text-header">Заголовок <br> в 2 строчки</h1>
             <p class="paragraph feature__text-paragraph">
                 В бизнес-центре Neo Geo расположилось 8 атриумов общей площадью 4500 кв.м. Каждый из них - это внутренний парк площадью от
                 200 до 700 кв.м, с местами как для отдыха и уединения, так и для деловых мероприятий. Общий элемент дизайна
@@ -51,7 +55,7 @@
 
     <section class="feature">
         <article class="feature__text">
-            <h1 class="feature__text-header">Спорт</h1>
+            <h1 class="header feature__text-header">Спорт</h1>
             <p class="paragraph feature__text-paragraph">
                 Один атриум станет источником энергии и креативных решений благодаря ярким манекенам, олицетворяющим людей в постоянном движении.
                 В другом можно расслабиться среди зелени в комфортных подвесных креслах. Некоторые атриумы скомбинированы

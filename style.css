@@ -1,0 +1,128 @@
+body {
+    /* min-width: 320px; */
+    max-width: 1600px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 165px;
+    padding: 0;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 300;
+    color: #000000;
+    background-color: #f6f6f6;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+    position: relative;
+}
+
+a:after {
+    display: block;
+    position: absolute;
+    content: "";
+    background: url(./res/arrow0_5x.png) no-repeat;
+    height: 13px;
+    width: 22px;
+    top: 5px;
+    right: -30px;
+}
+
+.header {
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.feature .feature__text {
+    width: 425px;
+}
+
+/* .feature__text{
+  font-size: 0.9vmax;
+} */
+
+.feature__text-header+.paragraph {
+    margin-top: 0;
+}
+
+.feature__image-container {
+    height: auto;
+    width: auto;
+    max-width: 720px;
+    max-height: 480px;
+}
+
+.feature-sport .feature__text {
+    margin-right: 65px;
+}
+
+.feature-sport .feature__image {
+    height: 100%;
+    width: 100%;
+    max-width: 720px;
+    max-height: 480px;
+}
+
+@media all and (max-width: 1400px) {
+    .header {
+        display: none;
+    }
+    .feature-sport {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+
+@media all and (max-width: 1200px) {
+    .feature-sport {
+        margin-right: -100px;
+    }
+}
+
+@media all and (max-width: 1000px) {
+    .feature {
+        flex-wrap: wrap-reverse;
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+    .feature .feature__text {
+      width: 100%;
+      margin-top: 40px;
+      line-height: 25px;
+      margin-right: 0;
+  }
+}
+
+@media all and (max-width: 760px) {
+    .feature {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .feature-sport .feature__image {
+        max-width: 680px;
+        max-height: 450px;
+    }
+}
+
+@media all and (max-width: 320px) {
+    .feature {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .feature-sport .feature__image {
+        max-width: 315px;
+        max-height: 215px;
+    }
+}
