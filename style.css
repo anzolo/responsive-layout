@@ -38,11 +38,16 @@ a:after {
     margin-bottom: 0;
 }
 
+.features-with-links {
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
 .feature {
     display: flex;
     align-items: center;
-    margin-left: 200px;
-    margin-right: 200px;
 }
 
 .feature .feature__text {
@@ -79,7 +84,7 @@ a:after {
     .header {
         display: none;
     }
-    .feature-sport {
+    .features-with-links {
         margin-left: 100px;
         margin-right: 100px;
     }
@@ -87,26 +92,31 @@ a:after {
 
 @media all and (max-width: 1200px) {
     .feature-sport {
-        margin-right: -100px;
+        margin-right: -170px;
     }
 }
 
 @media all and (max-width: 1000px) {
-    .feature {
-        flex-wrap: wrap-reverse;
+    .features-with-links {
         margin-left: 60px;
         margin-right: 60px;
     }
+    .feature {
+        flex-wrap: wrap-reverse;
+    }
+    .feature-sport {
+        margin-right: 0;
+    }
     .feature .feature__text {
-      width: 100%;
-      margin-top: 40px;
-      line-height: 25px;
-      margin-right: 0;
-  }
+        width: 720px;
+        margin-top: 40px;
+        line-height: 25px;
+        margin-right: 0;
+    }
 }
 
 @media all and (max-width: 760px) {
-    .feature {
+    .features-with-links {
         margin-left: 40px;
         margin-right: 40px;
     }
@@ -117,12 +127,19 @@ a:after {
 }
 
 @media all and (max-width: 320px) {
-    .feature {
+    body {
+        margin-top: 108px;
+    }
+    .features-with-links {
         margin-left: 0;
         margin-right: 0;
     }
     .feature-sport .feature__image {
         max-width: 315px;
         max-height: 215px;
+    }
+    .feature .feature__text {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
